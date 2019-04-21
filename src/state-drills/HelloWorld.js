@@ -6,16 +6,19 @@ export default class HelloWorld extends React.Component {
   };
 
   clickHandler = event => {
-    console.log(event.target.text());
+    const name = event.target.innerHTML.toLowerCase();
+    return this.setState({
+      who: name
+    });
   };
 
   render() {
     return (
       <div>
-        <p>Hello, {this.state.who}</p>
-        <button>World</button>
-        <button>Friend</button>
-        <button>React</button>
+        <p>Hello, {this.state.who}!</p>
+        <button onClick={e => this.clickHandler(e)}>World</button>
+        <button onClick={e => this.clickHandler(e)}>Friend</button>
+        <button onClick={e => this.clickHandler(e)}>React</button>
       </div>
     );
   }
