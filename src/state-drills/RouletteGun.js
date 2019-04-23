@@ -1,20 +1,26 @@
 import React from "react";
+import Button from "../Button";
 
 export default class RouletteGun extends React.Component {
   static defaultProps = {
     bulletInChamber: 8
   };
 
-  state = {
-    chamber: null,
-    spinningTheChamber: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      chamber: null,
+      spinningTheChamber: false
+    };
+  }
 
   componentWillUnmount() {
     this.timeout = clearInterval(this.timeout);
   }
 
-  clickHandler = () => {
+  clickHandler() {
+    console.log(this);
+
     this.setState({
       spinningTheChamber: true
     });
@@ -26,7 +32,7 @@ export default class RouletteGun extends React.Component {
         chamber: randomNum
       });
     }, 2000);
-  };
+  }
 
   renderDisplay() {
     const { chamber, spinningTheChamber } = this.state;
@@ -47,7 +53,8 @@ export default class RouletteGun extends React.Component {
     return (
       <div>
         <p>{this.renderDisplay()}</p>
-        <button onClick={e => this.clickHandler()}>Pull the trigger!</button>
+        {/* <button onClick={e => this.clickHandler()}>Pull the trigger!</button> */}
+        <Button clickHandler={this.clickHandler.bind(this)} />
       </div>
     );
   }
