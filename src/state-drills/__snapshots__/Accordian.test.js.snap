@@ -1,0 +1,140 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordian component Displays content in the respective section in the list when its button is clicked 1`] = `
+<div>
+  <ul>
+    <li>
+      <button
+        key="0"
+        onClick={[Function]}
+      >
+        Id minim dolor sit deserunt do sint dolore.
+      </button>
+      <p />
+    </li>
+    <li>
+      <button
+        key="1"
+        onClick={[Function]}
+      >
+        Esse cupidatat ut deserunt eiusmod eu minim voluptate laboris voluptate ad sit do cillum.
+      </button>
+      <p />
+    </li>
+    <li>
+      <button
+        key="2"
+        onClick={[Function]}
+      >
+        Fugiat ut dolor culpa aute consectetur laborum reprehenderit velit labore pariatur consectetur ex consectetur.
+      </button>
+      <p>
+        Nulla reprehenderit nulla ullamco officia. Culpa do voluptate ipsum amet aliqua eiusmod ipsum commodo. Ex ut pariatur reprehenderit non est elit excepteur ad pariatur dolore aliquip commodo proident. Sint sit do velit sit nisi. Duis aliqua aliqua duis laborum deserunt elit eiusmod enim eiusmod nulla minim sit magna.
+      </p>
+    </li>
+    <li>
+      <button
+        key="3"
+        onClick={[Function]}
+      >
+        Pariatur ad laboris cillum consequat labore sint fugiat nostrud id in proident esse.
+      </button>
+      <p />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Accordian component Does not render any content by default 1`] = `
+<div>
+  <ul>
+    <li>
+      <button
+        key="0"
+        onClick={[Function]}
+      >
+        Id minim dolor sit deserunt do sint dolore.
+      </button>
+      <p />
+    </li>
+    <li>
+      <button
+        key="1"
+        onClick={[Function]}
+      >
+        Esse cupidatat ut deserunt eiusmod eu minim voluptate laboris voluptate ad sit do cillum.
+      </button>
+      <p />
+    </li>
+    <li>
+      <button
+        key="2"
+        onClick={[Function]}
+      >
+        Fugiat ut dolor culpa aute consectetur laborum reprehenderit velit labore pariatur consectetur ex consectetur.
+      </button>
+      <p />
+    </li>
+    <li>
+      <button
+        key="3"
+        onClick={[Function]}
+      >
+        Pariatur ad laboris cillum consequat labore sint fugiat nostrud id in proident esse.
+      </button>
+      <p />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Accordian component Only displays content of the last section clicked when multiple are clicked 1`] = `
+<div>
+  <ul>
+    <li>
+      <button
+        key="0"
+        onClick={[Function]}
+      >
+        Id minim dolor sit deserunt do sint dolore.
+      </button>
+      <p />
+    </li>
+    <li>
+      <button
+        key="1"
+        onClick={[Function]}
+      >
+        Esse cupidatat ut deserunt eiusmod eu minim voluptate laboris voluptate ad sit do cillum.
+      </button>
+      <p>
+        Qui qui esse labore quis adipisicing est dolore velit nostrud magna dolor. Deserunt nisi nulla ullamco nulla exercitation. Enim nostrud velit quis officia incididunt reprehenderit do magna officia deserunt. Ipsum duis fugiat mollit Lorem consectetur consequat ut cupidatat minim est quis enim proident. Ut incididunt enim qui incididunt. Velit exercitation nisi ea exercitation labore ipsum sunt proident ex magna officia occaecat elit mollit. Sunt in aliqua duis cillum fugiat cupidatat est anim ad commodo consectetur nisi.
+      </p>
+    </li>
+    <li>
+      <button
+        key="2"
+        onClick={[Function]}
+      >
+        Fugiat ut dolor culpa aute consectetur laborum reprehenderit velit labore pariatur consectetur ex consectetur.
+      </button>
+      <p />
+    </li>
+    <li>
+      <button
+        key="3"
+        onClick={[Function]}
+      >
+        Pariatur ad laboris cillum consequat labore sint fugiat nostrud id in proident esse.
+      </button>
+      <p />
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Accordian component Renders empty when sections props is not provided 1`] = `
+<div>
+  <ul />
+</div>
+`;
